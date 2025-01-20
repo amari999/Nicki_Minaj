@@ -1,0 +1,38 @@
+html{
+    background: hotpink;
+}
+h1{
+    color: white;
+    font-family: "Pacifico", cursive;
+    text-align: center;
+}
+h2, h3{
+    color: white;
+    font-family: "Georgia", serif;
+    text-align: center;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+ol {
+    list-style-type: none;
+    counter-reset: roman-counter;
+    color: white;
+}
+ol li {
+    counter-increment: roman-counter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ol li::before {
+    content: counter(roman-counter, lower-roman) ". ";
+    margin-right: 5px;
+}
+
+a{
+    text-align: center;
+}
